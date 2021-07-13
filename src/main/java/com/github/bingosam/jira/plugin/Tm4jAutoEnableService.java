@@ -46,7 +46,7 @@ public class Tm4jAutoEnableService
     }
 
     @EventListener
-    public void enableTm4jAfterProject(ProjectCreatedEvent event)
+    public void enableTm4jAfterProjectCreated(ProjectCreatedEvent event)
             throws NoSuchMethodException
             , IllegalAccessException
             , InvocationTargetException {
