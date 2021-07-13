@@ -1,0 +1,24 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+        <param name="plugin-icon">images/logo.ico</param>
+        <param name="plugin-logo">images/logo.png</param>
+    </plugin-info>
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="i18n"/>
+
+    <!-- add our web resources -->
+    <web-resource key="tm4j-auto-enable-resources" name="tm4j-auto-enable Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+
+        <resource type="download" name="tm4j-auto-enable.css" location="/css/tm4j-auto-enable.css"/>
+        <resource type="download" name="tm4j-auto-enable.js" location="/js/tm4j-auto-enable.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>tm4j-auto-enable</context>
+    </web-resource>
+
+</atlassian-plugin>
