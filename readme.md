@@ -2,6 +2,10 @@
 
 The plugin for jira that enable Zephyr Scale automatically after project created.
 
+# todo
+
+Configurable rather than hard coded.
+
 # LICENSE
 
 See [LICENSE](LICENSE)
