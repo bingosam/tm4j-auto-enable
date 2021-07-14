@@ -53,7 +53,7 @@ public class Tm4jAutoEnableService
         long timestamp = System.currentTimeMillis();
         ServiceReference reference = bundleContext.getServiceReference(TM4J_PROJECT_SERVICE);
         if (reference == null) {
-            log.error("tm4j is disabled or not installed, unable to enable tm4j automatically!");
+            log.error("tm4j is neither enabled nor installed, unable to enable tm4j automatically!");
             return;
         }
 
